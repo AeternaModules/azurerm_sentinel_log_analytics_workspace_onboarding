@@ -9,7 +9,7 @@ EOT
 
   type = map(object({
     workspace_id                 = string
-    customer_managed_key_enabled = optional(bool, false)
+    customer_managed_key_enabled = optional(bool) # Default: false
   }))
 }
 
